@@ -1,0 +1,14 @@
+# Blender MTL File: 'medieval_scene.blend'
+# Material Count: 1
+
+newmtl blinn2.003
+Ns 63.117921
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\3D\\TP1_NEW\\Textures_Targa\\Trimesheet_lambert1_Normal.tga
+map_Kd windmillhouse\\Trimesheet_lambert1_BaseColor.tga.jpg

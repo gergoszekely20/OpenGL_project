@@ -1,0 +1,236 @@
+newmtl acmat_0
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd 2023-08-05_004056.jpg
+newmtl acmat_1
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd 2022-07-30_194614.jpg
+newmtl acmat_2
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd 2011-07-12_202529.jpg
+newmtl acmat_3
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd Rock001_2K_Color.jpg
+newmtl acmat_4
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd bitxt035.jpg
+newmtl acmat_5
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd leaded_glass_window_b_DIF.png
+newmtl acmat_6
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd textur-hintergrund.jpg
+newmtl acmat_7
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd mauerwerk_A_Base_Color.png
+newmtl acmat_8
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+newmtl acmat_9
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd 1-141121231547.jpg
+newmtl acmat_10
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd roof_slate_B_Base_Color01.png
+newmtl acmat_11
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 1-141121231547.jpg
+newmtl acmat_12
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd image_2023_03_12T11_18_46_854Z.png
+newmtl acmat_13
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd medieval_leaded_glass_window_Base_Color.tg.png
+newmtl acmat_14
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd leaded_glass_window_b_DIF.png
+newmtl acmat_15
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd roof_slate_B_Base_Color.png
+newmtl acmat_16
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+newmtl acmat_17
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 2023-08-05_004056.jpg
+newmtl acmat_18
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 2023-08-05_003440.jpg
+newmtl acmat_19
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd bark01.jpg
+newmtl acmat_20
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 2023-03-11_224323 Green01.jpg
+newmtl acmat_21
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 2023-04-02_002447.jpg
+newmtl acmat_22
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 2023-03-11_224323 Green.jpg
+newmtl acmat_23
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd mauerwerk_A_Base_Color.png
+newmtl acmat_24
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd stone05.jpg
+newmtl acmat_25
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd images (7).jpg
+newmtl acmat_26
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd 1-141121230950.jpg
+newmtl acmat_27
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 1-141121230950.jpg
+newmtl acmat_28
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd 2023-08-05_005024.jpg
+newmtl acmat_29
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 1-141121223203.jpg
+newmtl acmat_30
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 5_stone_base_wet.jpg
+newmtl acmat_31
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd bark01.jpg
+newmtl acmat_32
+Kd 1 1 1
+Ka 1 1 1
+Ks 0 0 0
+Ns 196
+Tr 0
+map_Kd 59f5c227f5340517b2cb0c1e056f3f51.jpg
+newmtl acmat_33
+Kd 1 1 1
+Ka 0.2 0.2 0.2
+Ks 0.2 0.2 0.2
+Ns 128
+Tr 0
+map_Kd 5_stone_base_wet.jpg
