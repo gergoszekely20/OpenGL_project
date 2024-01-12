@@ -548,10 +548,11 @@ void renderModels(gps::Shader shader) {
 	glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
 	glBindFramebuffer(GL_FRAMEBUFFER, shadowMapFBO);
 	glClear(GL_DEPTH_BUFFER_BIT);
-
 	drawObjects(depthMapShader, true);
-
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+	glViewport(0, 0, myWindow.getWindowDimensions().width, myWindow.getWindowDimensions().height);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	myBasicShader.useShaderProgram();
 	view = myCamera.getViewMatrix();
