@@ -106,6 +106,9 @@ glm::mat3 lightDirMatrix;
 GLuint lightDirMatrixLoc;
 int retina_width, retina_height;
 
+//for animation 
+int stop = 0;
+
 GLenum glCheckError_(const char* file, int line)
 {
 	GLenum errorCode;
@@ -376,6 +379,7 @@ void processMovement() {
 		lightDir = glm::vec3(rotationMatrix * glm::vec4(lightDir, 1.0f));
 		glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightDir));
 	}
+
 }
 
 void initOpenGLWindow() {
@@ -451,7 +455,6 @@ void initUniforms() {
 	//set the light direction (direction towards the light)
 	lightDir = glm::vec3(1.0f, 1.0f, 1.0f);
 	lightDirLoc = glGetUniformLocation(myBasicShader.shaderProgram, "lightDir");
-	// send light dir to shader
 
 
 	//set light color
@@ -541,8 +544,11 @@ void renderModels(gps::Shader shader) {
 	//send teapot normal matrix data to shader
 	glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
 
+	//draw the skyBox
 	mySkyBox.Draw(skyboxShader, view, projection);
-	
+
+
+	//draw the scene with shadows
 	depthMapShader.useShaderProgram();
 	glUniformMatrix4fv(glGetUniformLocation(depthMapShader.shaderProgram, "lightSpaceTrMatrix"), 1, GL_FALSE, glm::value_ptr(computeLightSpaceTrMatrix()));
 	glViewport(0, 0, SHADOW_WIDTH, SHADOW_HEIGHT);
@@ -565,13 +571,9 @@ void renderModels(gps::Shader shader) {
 	drawObjects(myBasicShader, false);
 
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
-
-
-	//mediv_scene.Draw(shader);
-	
 }
 
-int stop = 0;
+double valid;
 
 void renderScene() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -591,7 +593,6 @@ void renderScene() {
 	lightDir.y = lightVerticalOffset;
 
 	// Update the light direction and fog density as needed
-	//lightDir += lightMovementDirection * cameraSpeed;
 	glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightDir));
 	glUniform1f(fogDensityLoc, fogDensity);
 
@@ -599,6 +600,7 @@ void renderScene() {
 	double currentTimeStamp = glfwGetTime();
 	static double animationStartTime = glfwGetTime();
 	double elapsedTime = currentTimeStamp - animationStartTime;
+	valid = elapsedTime;
 	if (elapsedTime < 7.0) {
 		glm::vec3 cameraPosition = myCamera.getCameraPosition();
 		cameraPosition.y += 0.1f;
@@ -608,14 +610,12 @@ void renderScene() {
 		normalMatrix = glm::mat3(glm::inverseTranspose(view * model));
 	}
 
-
 	//modelElice.Draw(myBasicShader);
 	modelEagle.Draw(myBasicShader);
 
 	// Render the rest of the scene
 	renderModels(myBasicShader);
 }
-
 
 void cleanup() {
 	myWindow.Delete();
@@ -638,21 +638,18 @@ int main(int argc, const char* argv[]) {
 	initUniforms();
 	setWindowCallbacks();
 	initSkybox();
-
 	initFBO();
 
-
 	glCheckError();
+
 	// application loop
 	while (!glfwWindowShouldClose(myWindow.getWindow())) {
 
 		processCameraSpeed();
-		processMovement();
-
-
-
+		if (valid > 7.0f) {
+			processMovement();
+		}
 		renderScene();
-
 		glfwPollEvents();
 		glfwSwapBuffers(myWindow.getWindow());
 
