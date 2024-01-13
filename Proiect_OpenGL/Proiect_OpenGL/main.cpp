@@ -533,7 +533,6 @@ glm::mat4 computeLightSpaceTrMatrix() {
 	return lightSpaceTrMatrix;
 }
 
-
 void renderModels(gps::Shader shader) {
 	// select active shader program
 	shader.useShaderProgram();
