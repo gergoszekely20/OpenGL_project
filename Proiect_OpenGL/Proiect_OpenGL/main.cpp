@@ -544,6 +544,7 @@ void renderModels(gps::Shader shader) {
 	glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
 
 	//draw the skyBox
+	skyboxShader.useShaderProgram();
 	mySkyBox.Draw(skyboxShader, view, projection);
 
 
@@ -557,7 +558,6 @@ void renderModels(gps::Shader shader) {
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
 	glViewport(0, 0, myWindow.getWindowDimensions().width, myWindow.getWindowDimensions().height);
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	myBasicShader.useShaderProgram();
 	view = myCamera.getViewMatrix();
